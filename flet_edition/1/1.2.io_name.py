@@ -11,6 +11,7 @@ def main(page: ft.Page):
         if name_input.value:
             display_name.value = f"Уважаемый, {name_input.value}, иди в лес."
             page.update()
+
     name_input = ft.TextField(label="Имя")
     button_submit = ft.ElevatedButton(text="Отправить", on_click=button_clicked)
     display_name = ft.Text()
